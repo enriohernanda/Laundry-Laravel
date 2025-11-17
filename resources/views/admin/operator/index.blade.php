@@ -1,4 +1,4 @@
 @extends('admin.app')
 @section('content')
-<p>Dashboard</p>
+<p>Dashboard Operator</p>
 @endsection

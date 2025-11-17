@@ -112,7 +112,7 @@
                     </li>
                     <li>
                       <div class="d-grid px-4 pt-2 pb-1">
-                        <a class="btn btn-danger d-flex" href="javascript:void(0);">
+                        <a class="btn btn-danger d-flex" href="{{ route('logout') }}">
                           <small class="align-middle">Logout</small>
                           <i class="ri ri-logout-box-r-line ms-2 ri-xs"></i>
                         </a>
@@ -133,20 +133,12 @@
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row gy-6">
                 <!-- Congratulations card -->
-                <div class="col-md-12 col-lg-4">
+                <div class="col-md-12 col-lg-12">
                   <div class="card">
                     <div class="card-body text-nowrap">
-                      <h5 class="card-title mb-0 flex-wrap text-nowrap">Congratulations Norris! 🎉</h5>
-                      <p class="mb-2">Best seller of the month</p>
-                      <h4 class="text-primary mb-0">$42.8k</h4>
-                      <p class="mb-2">78% of target 🚀</p>
-                      <a href="javascript:;" class="btn btn-sm btn-primary">View Sales</a>
+                      <h5 class="card-title mb-0 flex-wrap text-nowrap">@yield('title')</h5>
+                      @yield('content')
                     </div>
-                    <img
-                      src="{{ asset('template/laundry/assets/img/illustrations/trophy.png') }}"
-                      class="position-absolute bottom-0 end-0 me-5 mb-5"
-                      width="83"
-                      alt="view sales" />
                   </div>
                 </div>
                 {{-- Congratulations card --}}
