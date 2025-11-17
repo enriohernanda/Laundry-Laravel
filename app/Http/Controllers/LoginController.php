@@ -23,5 +23,10 @@ class LoginController extends Controller
         // Alert::warning('Upsss', 'Invalid Credentials');
         // alert()->warning('Title','Lorem Lorem Lorem');
         return back()->withInput($request->only('email'));
+
+    }
+    public function logout() {
+        Auth::logout();
+        return redirect()->to('/');
     }
 }
